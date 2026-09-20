@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap');
+a{font-family: "Bebas Neue", sans-serif; font-weight: 400;}
+h4{font-family: "Bebas Neue", sans-serif;}
+h1{font-family: "Bebas Neue", sans-serif;}
+p{font-family: "Lora", serif;}
+h3{font-family: "Lora", serif;}
+
+
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* background-color: brown; */
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+
+.logo{
+    background-image: url(../photos/kingz\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 130px;
+    display: flex;
+    border-bottom: #F1D27A 1px solid;
+}
+
+.main{
+    /* background-color: blue; */
+    width: 60%;
+    height: 130px;
+}
+
+ul{
+    background-color: black;
+    /* border-left: #F1D27A 1px solid;
+    border-right: #F1D27A 1px solid; */
+    border-bottom: #F1D27A 1px solid;
+    width:auto;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li{
+    /* background-color: red; */
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+li:hover{
+    /* background-color: #F1D27A; */
+    border-bottom: 2px #F1D27A solid;
+    transition: 0.75s;
+    border-radius: 10px;
+    width: 70px;
+    height: auto;
+    color: black;
+}
+
+a{
+    /* background-color: lightblue; */
+    text-decoration: none;
+    color:#F1D27A;
+}
+
+.right{
+    background-color: black;
+    border-bottom: #F1D27A 1px solid;
+    width: 20%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .booking-btn{
+    /* background-color: red; */
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    color: #F1D27A;
+}
+
+.booking-btn i{ transition: 1s;}
+
+.booking-btn i:hover{
+    rotate: 360deg;
+    transform: scale(1.5);
+}
+
+/* THIS IS THE ABOUT SECTION WHERE, ALL THE INFO ABOUT THE SALOON IS PREPARED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.about-root{
+    background-color: beige;
+    width: 100%;
+    height: 800px;
+}
+.about-title-root{
+    /* background-color: red; */
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    transition: 1s;
+    background-color: #F1D27A;
+}
+.about-title-root:hover{
+    /* background-color: #F1D27A; */
+    color: black;
+    letter-spacing: 3px;
+}
+
+.about-main-root{
+    /* background-color: pink; */
+    width: 100%;
+    height: 74%;
+    overflow: hidden;
+    display: flex;
+}
+.about-img-section{
+    /* background-color: purple; */
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transition: 0.75s;
+}
+.about-img-section:hover{
+    transform: scale(1.05);
+}
+.about-img-one{
+    /* background-color: aqua; */
+    background-image: url(../photos/haricut.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 380px;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    border-radius: 5px;
+}
+.about-img-two{
+    /* background-color: navy; */
+    background-image: url(../photos/beard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    width: 250px;
+    height: 350px;
+    border: #F1D27A 5px solid;
+    border-radius: 5px;
+    z-index: 1;
+}
+.about-img-three{
+    /* background-color: black; */
+    background-image: url(../photos/saloon\ pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 180px;
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    left: 360px;
+    border-radius: 5px;
+}
+.about-img-four{
+    background-color: #F1D27A;
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    top: 425px;
+    left: 85px;
+    border-radius: 5px;
+}
+.about-exp-logo-root{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    color: black;
+}
+.about-exp-logo-root i{
+    color: #F1D27A;
+    font-size: 50px;
+    transition: 0.75s;
+    background-color: black;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-exp-logo-root i:hover{
+    transform: rotateY(360deg);
+}
+
+.about-text-root{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+.about-text-title{
+    /* background-color: pink; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.about-text-title p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 28px;
+    padding: 5px;
+    font-style: italic;
+    color: black;
+}
+.about-text-title h1{transition: 1s;margin-top: 20px;color: #F1D27A; word-spacing: 5px; letter-spacing: 2px;}
+.about-text-title h1:hover{color: black;letter-spacing: 5px;}
+
+.about-cards-root{
+    /* background-color: brown; */
+    width: 100%;
+    height: 60%;
+}
+.about-cards-top-section{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-cards-top-section div{
+    transition: 0.25s;
+    color: black;
+}
+.about-cards-top-section div:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px black;
+}
+
+
+.about-left-card{
+    background-color: #F1D27A;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.about-left-card i{font-size: 45px;transition: 1s;}
+.about-left-card i:hover{transform: rotate(270deg);}
+
+.about-left-card h4{font-size: 25px;transition: 1s;}
+.about-left-card h4:hover{letter-spacing: 0.75px;}
+
+
+.about-middle-card{
+    background-color: #F1D27A;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.about-middle-card i{font-size: 50px;transition: 0.95s ease;}
+.about-middle-card i:hover{
+    transform: rotate(360deg);
+    text-shadow: 0 0 5px #ffd700 ,0 0 10px #ffd700, 0 0 20px #ffd700;}
+
+.about-middle-card h4{font-size: 25px;transition: 1s;}
+.about-middle-card h4:hover{letter-spacing: 0.75px;}
+
+
+
+.about-right-card{
+    background-color: #F1D27A;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.about-right-card i{font-size: 50px;transition: 1s;}
+.about-right-card i:hover{
+    transform: scale(1.1);
+    text-shadow: 0 -5px 10px #ffd700;
+}
+.about-right-card h4{font-size: 25px;transition: 1s;}
+.about-right-card h4:hover{letter-spacing: 0.75px;}
+
+
+
+
+.about-cards-bottom-section{
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.about-cards-bottom-section h3{
+    background-color: #F1D27A;
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-style: italic;
+    transition: 1s ease;
+    border-bottom: 2px gray solid;
+}
+
+.about-cards-bottom-section h3:hover{
+    width: 90%;
+    letter-spacing: 1px;
+    border-bottom: 2px black solid;
+}
+
+
+
+.about-footer-root{
+    /* background-color: green; */
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+    font-size: 25px;
+    letter-spacing: 1.25;
+}
+.about-footer-root:hover{
+    background-color: #F1D27A;
+    letter-spacing: 2px;
+    color: black;
+}
+/* <------------------------------------------------------------------------------------------------------------------------> */
+
+
+/* THIS IS THE SERVIE SECTION OF THE SITE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.Services-page-root{
+    width: 100%;
+    height: 800px;
+    background-image:url(../photos/saloon\ pic.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.services-title{
+    /* background-color: green; */
+    border-bottom: #F1D27A 1px solid;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F1D27A;
+    font-size: 30px;
+    transition: 1s;
+}
+
+.services-title:hover{
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.Services{
+    /* background-color: red; */
+    width: 100%;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    overflow: hidden;
+}
+
+
+/* this is the haircut portion */
+.haircut-back{
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F1D27A;
+    /* border-top: #F1D27A 2px solid; */
+    border-bottom:  #F1D27A 2px solid;
+    transition: 0.50s;
+}
+
+.haircut-back:hover{
+    scale: 1.1;
+    border-right: #F1D27A 2px solid;
+    border-left: #F1D27A 2px solid;
+    border-radius: 5px;
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.haircut{
+    background-image: url(../photos/haricut.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 90%;
+    display: block;
+    
+}
+
+/* this is the beard portion */
+.beard-back{
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F1D27A;
+    border-bottom:  #F1D27A 2px solid;
+    transition: 0.50s;
+}
+
+.beard-back:hover{
+    scale: 1.1;
+    border-right: #F1D27A 2px solid;
+    border-left: #F1D27A 2px solid;
+    border-radius: 5px;
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.beard{
+    background-image: url(../photos/beard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+
+/* this is the facial portion */
+.facial-back{
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F1D27A;
+    border-bottom:  #F1D27A 2px solid;
+    transition: 0.50s;
+}
+
+.facial-back:hover{
+    scale: 1.1;
+    border-right: #F1D27A 2px solid;
+    border-left: #F1D27A 2px solid;
+    border-radius: 5px;
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.facial{
+    background-image: url(../photos/facials.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+/* this is the grooming section */
+.grooming-back{
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F1D27A;
+    border-bottom:  #F1D27A 2px solid;
+    transition: 0.50s;
+}
+
+.grooming-back:hover{
+    scale: 1.1;
+    border-right: #F1D27A 2px solid;
+    border-left: #F1D27A 2px solid;
+    border-radius: 5px;
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.grooming{
+    background-image: url(../photos/grooming.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+.Services-footer{
+    background-color: transparent;
+    border-top: #F1D27A 1px solid;
+    border-bottom: #F1D27A 1px solid;
+    width: 100%;
+    height: 23.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #F1D27A;
+    transition: 0.85s;
+
+}
+
+.Services-footer:hover{
+    background-color: #F1D27A;
+    color: black;
+    letter-spacing: 2px;
+}
+/* <----------------------------------------------------------------------------------------------------------------------------->  */
+ 
